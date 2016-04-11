@@ -181,7 +181,7 @@ public class Stage extends InputAdapter implements Disposable {
 		}
 	}
 
-	/** Calls {@link #act(float)} with {@link Graphics#getDeltaTime()}. */
+	/** Calls {@link #act(float)} with {@link Graphics#getDeltaTime()}, limited to a minimum of 30fps. */
 	public void act () {
 		act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
 	}
@@ -219,7 +219,6 @@ public class Stage extends InputAdapter implements Disposable {
 		if (type == ApplicationType.Desktop || type == ApplicationType.Applet || type == ApplicationType.WebGL)
 			mouseOverActor = fireEnterAndExit(mouseOverActor, mouseScreenX, mouseScreenY, -1);
 
-		// Run actions and determine whether to request rendering (for when setContinuousRendering is off)
 		root.act(delta);
 	}
 

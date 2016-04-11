@@ -60,11 +60,13 @@ import com.badlogic.gdx.tests.g3d.MaterialTest;
 import com.badlogic.gdx.tests.g3d.MeshBuilderTest;
 import com.badlogic.gdx.tests.g3d.ModelCacheTest;
 import com.badlogic.gdx.tests.g3d.ModelTest;
+import com.badlogic.gdx.tests.g3d.MultipleRenderTargetTest;
 import com.badlogic.gdx.tests.g3d.ParticleControllerTest;
 import com.badlogic.gdx.tests.g3d.ShaderCollectionTest;
 import com.badlogic.gdx.tests.g3d.ShaderTest;
 import com.badlogic.gdx.tests.g3d.ShadowMappingTest;
 import com.badlogic.gdx.tests.g3d.SkeletonTest;
+import com.badlogic.gdx.tests.g3d.TextureArrayTest;
 import com.badlogic.gdx.tests.g3d.TextureRegion3DTest;
 import com.badlogic.gdx.tests.gles2.HelloTriangle;
 import com.badlogic.gdx.tests.gles2.SimpleVertexShader;
@@ -133,6 +135,7 @@ public class GdxTests {
 		ControllersTest.class,
 		Gdx2DTest.class,
 		GestureDetectorTest.class,
+		GLES30Test.class,
 		GLProfilerErrorTest.class,
 		GroupCullingTest.class,
 		GroupFadeTest.class,
@@ -165,6 +168,7 @@ public class GdxTests {
 		ModelTest.class,
 		ModelCacheTest.class,
 		MoveSpriteExample.class,
+		MultipleRenderTargetTest.class,
 		MultitouchTest.class,
 		MusicTest.class,
 		NetAPITest.class,
@@ -220,6 +224,7 @@ public class GdxTests {
 		TextButtonTest.class,
 		TextInputDialogTest.class,
 		TextureAtlasTest.class,
+		TextureArrayTest.class,
 		TextureDataTest.class,
 		TextureDownloadTest.class,
 		TextureFormatTest.class,
@@ -239,6 +244,7 @@ public class GdxTests {
 		TreeTest.class,
 		UISimpleTest.class,
 		UITest.class,
+		VBOWithVAOPerformanceTest.class,
 		Vector2dTest.class,
 		VertexBufferObjectShaderTest.class,
 		VibratorTest.class,
